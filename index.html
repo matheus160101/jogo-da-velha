@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
+  <script src="./index.js" defer></script>
+  <title>Jogo da Velha</title>
+</head>
+<body>
+  <section>
+    <div class="container">
+
+      <div class="form">
+        <h2>JOGO DA VELHA</h2>
+        <form>
+        <h2>Digite o nome dos Jogadores!</h2>
+          <div class="name">
+            <input type="text" id="player1" placeholder="Player 1">
+            <p>VS</p>
+            <input type="text" id="player2" placeholder="Player 2">
+          </div><!--name-->
+          <button id="start" type="button">Iniciar</button>
+        </form>
+        
+      </div><!--form-->
+
+      <div class="game">
+        <h2><span id="turnPlayer"></span></h2>
+        <div class="players">
+          <label id="p1" class="player1" for="player1">Player 1</label>
+          <p>VS</p>
+          <label id="p2" class="player2" for="player2">Player 2</label>
+        </div>
+        <table id="gameBoard">
+          <tbody>
+            <td data-region="0.0"></td>
+            <td data-region="0.1"></td>
+            <td data-region="0.2"></td>
+          </tbody>
+          <tbody>
+            <td data-region="1.0"></td>
+            <td data-region="1.1"></td>
+            <td data-region="1.2"></td>
+          </tbody>
+          <tbody>
+            <td data-region="2.0"></td>
+            <td data-region="2.1"></td>
+            <td data-region="2.2"></td>
+          </tbody>
+        </table>
+      </div>
+    </div><!--container-->
+  </section>
+</body>
+</html>

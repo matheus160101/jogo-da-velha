@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Seymour One', sans-serif;
+}
+
+section {
+  width: 100%;
+  background-color: #84a5e4;
+}
+
+section .container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section .container h2{
+  font-size: 30px;
+  color: rgb(255, 253, 253);
+}
+
+section .form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+section .form form h2{
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+section .form .name{
+  padding: 20px;
+  color: white;
+}
+
+section .form .name p{
+  padding: 10px;
+}
+
+section .form .name input{
+  width: 350px;
+  height: 35px;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+section .form button{
+  width: 180px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+section .container .game{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section .game .players{
+  display: flex;
+  width: 50%;
+  height: 80px;
+  background-color: white;
+  margin-bottom: 50px;
+  border: 3px solid black;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 5px 5px;
+}
+
+section .game .players p {
+  padding: 20px 10px;
+  
+}
+
+section .game .players label{
+  width: 50%;
+  height: 64px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+section .game table{
+  width: 100%;
+  max-width: 50%;
+  text-align: center;
+}
+
+section .game table tbody{
+  width: 50px;
+  height: 10vh;
+  background-color: rgb(255, 255, 255);
+}
+
+section .game table tbody td{
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50px;
+}
+
+section .game table tbody td.win{
+  background-color: #25a340;
+}
+
+
+@media screen and (max-width:1280px){
+
+  section {
+    width: 100%;
+    height: 100%;
+    background-color: #84a5e4;
+  }
+
+  section .container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  section .form{
+  padding: 4rem 0px;
+}
+
+  section .form .name input{
+  width: 100%;
+}
+
+  section .container .game{
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+
+}
+
+
+@media screen and (max-width:730px){
+  section .form{
+    width: 80%;
+  }
+
+  section .game .players{
+    width: 80%;
+  }
+
+  section .game table{
+    max-width: 80%;
+  }
+}
