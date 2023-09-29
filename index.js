@@ -47,6 +47,33 @@ function initializeGame() {
     element.addEventListener('click', handleBoardClick)
   })
 }
+
+function resetGame() {
+  // Limpar o tabuleiro
+  boardRegions.forEach(function (element) {
+    element.classList.remove('win');
+    element.innerText = '';
+    element.classList.add('cursor-pointer');
+    element.addEventListener('click', handleBoardClick);
+  });
+
+  // Redefinir variáveis globais
+  vBoard = [['', '', ''], ['', '', ''], ['', '', '']];
+  turnPlayer = 'player1';
+
+  // Redefinir os campos de entrada e placeholders
+  document.getElementById('player1').value = ''; // Limpa o valor digitado
+  document.getElementById('player2').value = ''; // Limpa o valor digitado
+
+
+  // Atualizar o título
+  updateTitle();
+
+  // Atualizar o texto do botão "Start"
+  buttonText.innerHTML = "Iniciar";
+}
+
+
 // Verifica se existem três regiões iguais em sequência e devolve as regiões
 function getWinRegions() {
   const winRegions = []
@@ -124,4 +151,17 @@ function handleBoardClick(ev) {
   }
 }
 // Adiciona o evento no botão que inicia o jogo
-document.getElementById('start').addEventListener('click', initializeGame)
+
+const buttonText = document.getElementById('start');
+
+buttonText.addEventListener('click', () => {
+  if (buttonText.innerHTML === "Iniciar") {
+    initializeGame();
+    buttonText.innerHTML = "Reiniciar";
+  } else {
+    buttonText.innerHTML = "Iniciar";
+    resetGame();
+  }
+});
+
+
