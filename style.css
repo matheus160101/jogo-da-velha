@@ -99,10 +99,12 @@ section .game table{
   width: 50%;
   height: 40vh;
   text-align: center;
+  padding-bottom: 4rem;
 }
 
 section .game table tbody{
-  height: 10vh;
+  width: 3rem;
+  height: 3rem;
   background-color: rgb(255, 255, 255);
 }
 
