@@ -29,27 +29,31 @@
       <div class="game">
         <h2><span id="turnPlayer"></span></h2>
         <div class="players">
-          <label id="p1" class="player1" for="player1">Player 1</label>
-          <p>VS</p>
-          <label id="p2" class="player2" for="player2">Player 2</label>
+          <div class="players-game">
+            <label id="p1" class="player1" for="player1">Player 1</label>
+             <p>VS</p>
+           <label id="p2" class="player2" for="player2">Player 2</label>
+          </div>
+
+          <table id="gameBoard">
+            <tbody>
+              <td data-region="0.0"></td>
+              <td data-region="0.1"></td>
+              <td data-region="0.2"></td>
+            </tbody>
+            <tbody>
+              <td data-region="1.0"></td>
+              <td data-region="1.1"></td>
+              <td data-region="1.2"></td>
+            </tbody>
+            <tbody>
+              <td data-region="2.0"></td>
+              <td data-region="2.1"></td>
+              <td data-region="2.2"></td>
+            </tbody>
+          </table>
         </div>
-        <table id="gameBoard">
-          <tbody>
-            <td data-region="0.0"></td>
-            <td data-region="0.1"></td>
-            <td data-region="0.2"></td>
-          </tbody>
-          <tbody>
-            <td data-region="1.0"></td>
-            <td data-region="1.1"></td>
-            <td data-region="1.2"></td>
-          </tbody>
-          <tbody>
-            <td data-region="2.0"></td>
-            <td data-region="2.1"></td>
-            <td data-region="2.2"></td>
-          </tbody>
-        </table>
+        
       </div>
     </div><!--container-->
   </section>
