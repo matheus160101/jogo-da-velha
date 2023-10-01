@@ -96,14 +96,12 @@ section .game .players label{
 }
 
 section .game table{
-  width: 100%;
-  max-width: 50%;
+  width: 50%;
   height: 40vh;
   text-align: center;
 }
 
 section .game table tbody{
-  width: 50px;
   height: 10vh;
   background-color: rgb(255, 255, 255);
 }
@@ -111,7 +109,8 @@ section .game table tbody{
 section .game table tbody td{
   border-radius: 5px;
   cursor: pointer;
-  width: 50px;
+  width: 2rem;
+  height: 2rem;
 }
 
 section .game table tbody td.win{
@@ -162,6 +161,6 @@ section .game table tbody td.win{
   }
 
   section .game table{
-    max-width: 80%;
+    width: 80%;
   }
 }
