@@ -151,8 +151,12 @@ section .game table tbody td.win{
 
 }
 
-
 @media screen and (max-width:730px){
+  
+  section .container{
+    height: 100%;
+  }
+  
   section .form{
     width: 80%;
   }
