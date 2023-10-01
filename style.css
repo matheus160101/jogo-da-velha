@@ -98,6 +98,7 @@ section .game .players label{
 section .game table{
   width: 100%;
   max-width: 50%;
+  height: 40vh;
   text-align: center;
 }
 
@@ -151,12 +152,7 @@ section .game table tbody td.win{
 
 }
 
-@media screen and (max-width:730px){
-  
-  section .container{
-    height: 200vh;
-  }
-  
+@media screen and (max-width:730px){  
   section .form{
     width: 80%;
   }
